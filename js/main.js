@@ -1,5 +1,8 @@
 "use strict";
 
+// Viene generato il biglietto al click del bottone
+const genera = document.getElementById("genera");
+
 genera.addEventListener("click", function () {
   const biglietto = document.getElementById("biglietto");
   biglietto.classList.remove("opacity-0");
@@ -64,6 +67,9 @@ genera.addEventListener("click", function () {
   const costo = document.getElementById("costo");
   costo.innerHTML = `${parseFloat(prezzoTotale.toFixed(2))} €`;
 });
+
+// Viene eliminato il biglietto al click del bottone
+const annulla = document.getElementById("annulla");
 
 annulla.addEventListener("click", function () {
   const biglietto = document.getElementById("biglietto");
