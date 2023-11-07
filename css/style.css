@@ -21,11 +21,23 @@ body {
 }
 
 .left {
-  background-color: rgb(35, 35, 35);
+  background-color: #005b41;
   color: white;
 }
 
 .left h2 {
-  color: #01e165;
   transform: rotate(270deg);
+}
+
+.right .img {
+  height: 200px;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+}
+
+.right .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }

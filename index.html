@@ -27,8 +27,9 @@
     <!-- /css -->
   </head>
   <body>
+    <!-- main -->
     <main class="container-md my-5">
-      <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
+      <h1 class="text-center my-5">Calcola il prezzo del tuo biglietto</h1>
       <!-- richieste utente -->
       <form>
         <div class="row g-3">
@@ -51,16 +52,19 @@
             </select>
           </div>
           <div class="row g-3 text-center">
-            <div class="col-6">
-              <button type="button" id="genera">Genera</button>
+            <div class="col-6 text-end">
+              <button type="button" id="genera" class="btn btn-success">
+                Genera
+              </button>
             </div>
-            <div class="col-6">
-              <button type="reset" id="annulla">Annulla</button>
+            <div class="col-6 text-start">
+              <button type="reset" id="annulla" class="btn btn-danger">
+                Annulla
+              </button>
             </div>
           </div>
         </div>
       </form>
-
       <!-- /richieste utente -->
 
       <!-- biglietto treno -->
@@ -68,35 +72,39 @@
         <h2 class="text-center my-5">Il tuo biglietto</h2>
         <div class="row left py-5 px-2 rounded-5">
           <div
-            class="col-3 d-flex flex-column align-items-center justify-content-center"
+            class="col-3 d-flex flex-column align-items-center justify-content-center border-end border-white"
           >
             <h2 class="fs-1 my-5">itaLean</h2>
             <div class="logo">
               <img src="img/logo-itaLean.png" alt="logo" />
             </div>
           </div>
-          <div class="col-9">
-            <div class="top">
+          <div class="col-9 px-5 position-relative right">
+            <div class="top py-3">
               <h4>Nome Passeggero</h4>
               <p id="nome">Nome Cognome</p>
               <h4>Offerta</h4>
               <p id="tipologia">Tipologia Biglietto</p>
             </div>
-            <div class="mid">
+            <div class="mid py-3">
               <h4>Carrozza</h4>
               <p id="carrozza">Numero Carrozza</p>
               <h4>Codice Cip</h4>
               <p id="codiceCip">Numero codice</p>
             </div>
-            <div class="bottom">
+            <div class="bottom py-3">
               <h4>Costo Biglietto</h4>
               <p id="costo">Prezzo Biglietto</p>
+            </div>
+            <div class="img position-absolute">
+              <img src="img/QRcode.png" alt="QR code" />
             </div>
           </div>
         </div>
       </div>
       <!-- /biglietto treno -->
     </main>
+    <!-- /main -->
 
     <!-- bootstrap js -->
     <script
