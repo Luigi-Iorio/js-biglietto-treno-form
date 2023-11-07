@@ -25,3 +25,7 @@ Il calcolo del prezzo è basato sulla repo precedente (_[js-biglietto-treno](htt
 ### Screenshot di riferimento
 
 ![screenshot di riferimento](img/screenshot.png)
+
+## Layout finale
+
+![Layout finale](img/Screenshot_finale.png)
