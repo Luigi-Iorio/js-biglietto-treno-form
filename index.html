@@ -27,31 +27,75 @@
     <!-- /css -->
   </head>
   <body>
-    <main class="container-md">
+    <main class="container-md my-5">
       <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
       <!-- richieste utente -->
-      <div class="row g-3">
-        <div class="col-md-4">
-          <label for="nameSurname" class="form-label">Nome e Cognome</label>
-          <input type="text" class="form-control" id="nameSurname" />
+      <form>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="nameSurname" class="form-label">Nome e Cognome</label>
+            <input type="text" class="form-control" id="nameSurname" />
+          </div>
+          <div class="col-md-4">
+            <label for="kmDaPercorrere" class="form-label"
+              >Km da percorrere</label
+            >
+            <input type="number" class="form-control" id="kmDaPercorrere" />
+          </div>
+          <div class="col-md-4">
+            <label for="etaPasseggero" class="form-label">Fascia d'età</label>
+            <select id="etaPasseggero" class="form-select">
+              <option id="maggiorenne" selected>maggiorenne</option>
+              <option id="minorenne">minorenne</option>
+              <option id="over">over 65</option>
+            </select>
+          </div>
+          <div class="row g-3 text-center">
+            <div class="col-6">
+              <button type="button" id="genera">Genera</button>
+            </div>
+            <div class="col-6">
+              <button type="reset" id="annulla">Annulla</button>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <label for="kmDaPercorrere" class="form-label"
-            >Km da percorrere</label
-          >
-          <input type="number" class="form-control" id="kmDaPercorrere" />
-        </div>
-        <div class="col-md-4">
-          <label for="etaPasseggero" class="form-label">Fascia d'età</label>
-          <select id="etaPasseggero" class="form-select">
-            <option id="maggiorenne" selected>maggiorenne</option>
-            <option id="minorenne">minorenne</option>
-            <option id="over">over 65</option>
-          </select>
-        </div>
-        <button id="genera">Genera</button>
-      </div>
+      </form>
+
       <!-- /richieste utente -->
+
+      <!-- biglietto treno -->
+      <div id="biglietto" class="container-md my-5 opacity-0">
+        <h2 class="text-center my-5">Il tuo biglietto</h2>
+        <div class="row left py-5 px-2 rounded-5">
+          <div
+            class="col-3 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h2 class="fs-1 my-5">itaLean</h2>
+            <div class="logo">
+              <img src="img/logo-itaLean.png" alt="logo" />
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="top">
+              <h4>Nome Passeggero</h4>
+              <p id="nome">Nome Cognome</p>
+              <h4>Offerta</h4>
+              <p id="tipologia">Tipologia Biglietto</p>
+            </div>
+            <div class="mid">
+              <h4>Carrozza</h4>
+              <p id="carrozza">Numero Carrozza</p>
+              <h4>Codice Cip</h4>
+              <p id="codiceCip">Numero codice</p>
+            </div>
+            <div class="bottom">
+              <h4>Costo Biglietto</h4>
+              <p id="costo">Prezzo Biglietto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /biglietto treno -->
     </main>
 
     <!-- bootstrap js -->
