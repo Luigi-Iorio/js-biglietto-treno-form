@@ -3,9 +3,11 @@
 genera.addEventListener("click", function () {
   // Numero di km
   let numeroKm = parseFloat(document.getElementById("kmDaPercorrere").value);
+  console.log("Il numero di km da percorrere è: ", numeroKm);
 
   // Età passeggero
   const etaPasseggero = document.getElementById("etaPasseggero").value;
+  console.log("Il passeggero è: ", etaPasseggero);
 
   let minorenne = document.getElementById("minorenne").value;
   let over = document.getElementById("over").value;
